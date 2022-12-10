@@ -26,10 +26,6 @@ public class FlightsController {
     @Autowired
     FlightsService flightsService;
 
-    public FlightsController() {
-
-    }
-
     @GetMapping("/flights/search")
     @ResponseBody
     public ResponseEntity<List<Flight>> searchFlights(
